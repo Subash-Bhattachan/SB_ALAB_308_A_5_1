@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Wedding RSVP</h2> 
+            <p_motto>Come, grace us with your presence!</p>         
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>First Name</label>
+                <input type="text" placeholder="John" id="firstname" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Last Name</label>
+                <input type="text" placeholder="Doe" id="lastname">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="123-456-7890" id="phonenumber">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email Address</label>
+                <input type="text" placeholder="johndoe@example.com" id="emailaddress">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="choice-input-field">
+                
+                <div class="radio-group">
+                    
+                    <label>
+                            <input type="radio" id="yesRadio" name="option" value="yes"  class="radio-input">
+                                    I am attending.
+                    </label>
+                    
+                    <label>
+                            <input type="radio" id="noRadio" name="option" value="no" class="radio-input">
+                                    I am not attending.
+                    </label>
+                    
+                    <small>Error message</small>
+                </div>
+
+            <div class="form-control">
+                <label></label>
+                
+                <label for="dynamic-dropdown"></label>
+        <select id="dynamic-dropdown">
+            <option value="disabled selected">If yes, how many people are attending altogether?</option>
+        </select>
+                
+        
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <!-- <small>Error message</small> -->
+            </div>
+            
+            <button type="submit">Submit</button>
+
+        </form>
+   </div>
+   <script type="module" src="./index.js"></script>
+   <script type="module" src="./functions.js"></script>
+</body>
+</html>
